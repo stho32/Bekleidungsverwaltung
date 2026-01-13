@@ -62,11 +62,27 @@ Transparente Verwaltung der Bekleidungsansprüche aller Mitarbeiter, Vermeidung 
 - Microsoft Excel 2016 oder neuer mit Makro-Unterstützung
 - Aktivierte Makros beim Öffnen der Datei
 
-## Offene Fragen
-- Sollen Größen (S, M, L, XL) pro Ausgabe erfasst werden?
-- Gibt es Mitarbeiter mit abweichenden Ansprüchen (z.B. Teilzeit, Führungskräfte)?
-- Soll ein Passwortschutz für die Konfigurationsblätter eingerichtet werden?
-- Wie soll mit ausgeschiedenen Mitarbeitern umgegangen werden?
+## Geklärte Anforderungen
+
+### Größenerfassung
+**Entscheidung:** Ja, Größen werden pro Ausgabe erfasst.
+- Größen (z.B. S, M, L, XL, XXL) werden bei jeder Ausgabe mit dokumentiert
+- Verfügbare Größen werden pro Artikel im Sortiment hinterlegt
+
+### Individuelle Ansprüche
+**Entscheidung:** Es gibt einen generellen Standard, aber einzelne Mitarbeiter können Abweichungen haben.
+- Standard-Ansprüche werden im Sortiment definiert
+- Individuelle Abweichungen (z.B. +2 oder -1) werden pro Mitarbeiter und Artikel hinterlegt
+- **Sonderregel Innendienst:** Mitarbeiter im Innendienst erhalten nur 2 Hemden/Blusen (statt Standard)
+
+### Passwortschutz
+**Entscheidung:** Nein, kein Passwortschutz für Konfigurationsblätter.
+
+### Ausgeschiedene Mitarbeiter
+**Entscheidung:** Aktiv-Flag verwenden.
+- Mitarbeiter werden nicht gelöscht, sondern als "inaktiv" markiert
+- Historische Ausgabedaten bleiben erhalten
+- Inaktive Mitarbeiter erscheinen nicht mehr in Auswahl-Dropdowns
 
 ## Manuelle Vorbereitungstätigkeiten
 - Mitarbeiterliste mit Personalnummern zusammenstellen
